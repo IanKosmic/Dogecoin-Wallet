@@ -1,0 +1,168 @@
+/* styles.css */
+
+/* Estilos generales aplicados a todos los elementos */
+* {
+    box-sizing: border-box; /* Caja de modelado que incluye el borde */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina rellenos por defecto */
+    font-family: Arial, sans-serif; /* Fuente predeterminada para todo el documento */
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+    background: linear-gradient(to right, #cb9800, #e1b303); /* Fondo con gradiente lineal */
+    display: flex; /* Contenedor principal de tipo flexbox */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del cuerpo */
+    align-items: center; /* Centra verticalmente los elementos dentro del cuerpo */
+    height: 100vh; /* 100% del alto de la ventana visible */
+    color: #fff; /* Color de texto blanco */
+}
+
+.login-container img {
+    width: 35%; /* Ancho de la imagen del contenedor de inicio de sesión */
+    height: 35%; /* Alto de la imagen del contenedor de inicio de sesión */
+    margin-bottom: 5%;
+}
+
+/* Estilos para el contenedor principal de inicio de sesión */
+.login-container {
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    padding: 50px; /* Relleno interno de 50px */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    width: 100%; /* Ancho máximo del contenedor */
+    max-width: 400px; /* Ancho máximo establecido en 400px */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+/* Estilos para el título de inicio de sesión */
+.login-container h2 {
+    margin-bottom: 20px; /* Margen inferior de 20px para separación */
+    font-size: 24px; /* Tamaño de fuente de 24px */
+}
+
+/* Estilos para los grupos de formularios (usuario y contraseña) */
+.form-group {
+    margin-bottom: 20px; /* Margen inferior de 20px para separación entre grupos */
+    justify-content: space-between; /* Espacio entre los elementos del grupo */
+    text-align: left; /* Alineación del texto a la izquierda */
+    display: flex; /* Mostrar como contenedor flexbox */
+    flex-wrap: wrap; /* No permite el ajuste de elementos */
+    flex-direction: row; /* Direccionamiento de los elementos en fila */
+}
+
+/* Estilos para las etiquetas de los campos de formulario */
+.form-group label {
+    display: block; /* Mostrar como bloque para ocupar toda la anchura disponible */
+    margin-bottom: 0; /* Margen inferior de 0px para omitir separación entre etiquetas */
+    align-self: center; /* Alineación vertical de la etiqueta */
+    font-weight: bold; /* Fuente en negrita para mayor legibilidad */
+    color: #fff; /* Color blanco para el texto de la etiqueta */
+}
+
+/* Estilos para los campos de entrada de texto y contraseña */
+.form-group input {
+    width: auto; /* Ancho ajustable del campo de entrada */
+    min-width: 70%; /* Ancho mínimo del 70% del contenedor padre */
+    padding: 10px; /* Relleno interno de 10px */
+    border: none; /* Borde sin estilo */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para el campo de entrada */
+    color: #000; /* Color de texto negro */
+}
+
+.form-group-atm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+
+/* Estilos para el estado de foco de los campos de entrada */
+.form-group input:focus {
+    outline: none; /* Elimina el contorno al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra alrededor del campo con color de enfoque */
+}
+
+/* Estilos para los botones de inicio de sesión */
+button {
+    background-color: #00000096; /* Color de fondo inicial */
+    color: #e1b303; /* Color de texto */
+    border: none; /* Borde sin estilo */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 20px; /* Relleno interno de 10px arriba y abajo, 20px a los lados */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+button#lOut {
+    background-color: #00000096; /* Color de fondo inicial */
+    color: #ff0000; /* Color de texto */
+    border: none; /* Borde sin estilo */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 20px; /* Relleno interno de 10px arriba y abajo, 20px a los lados */
+    font-size: 20px; /* Tamaño de fuente de 16px */
+    cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+    margin-top: 2rem;
+    width: 100%;
+}
+
+button#lOut:hover {
+    background-color: #e1b303; /* Nuevo color de fondo al pasar el cursor */
+}
+
+form p {
+    margin-top: 0.5rem; /* Margen superior de 0.5rem */
+    margin-bottom: 0; /* Margen inferior de 0 */
+    border: 0; /* Borde sin estilo */
+    padding: 2rem; /* Relleno interno de 2rem */
+}
+
+/* Estilos para el estado de hover del botón */
+button:hover {
+    background-color: #182848; /* Nuevo color de fondo al pasar el cursor */
+}
+
+/* Estilos para el contenedor del cajero ATM */
+.atm-container {
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    padding: 50px; /* Relleno interno de 50px */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    width: 100%; /* Ancho máximo del contenedor */
+    max-width: 400px; /* Ancho máximo establecido en 400px */
+    text-align: center; /* Alineación del texto al centro */
+
+}
+
+.atm-container img {
+    width: 35%; /* Ancho de la imagen del contenedor ATM */
+    height: 35%; /* Alto de la imagen del contenedor ATM */
+}
+
+.atm-container h1 {
+    margin-bottom: 10px; /* Margen inferior de 10px para separación */
+    background: rgba(203, 152, 0, 0.50); /* Fondo semitransparente */
+    padding: 20px; /* Relleno interno de 20px */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    width: 100%; /* Ancho máximo del contenedor */
+    max-width: 400px; /* Ancho máximo establecido en 400px */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+.atm-container h2 {
+    margin-bottom: 1rem; /* Margen inferior de 1rem para separación */
+    margin-top: 1rem; /* Margen superior de 1rem */
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    padding: 1rem; /* Relleno interno de 20px */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    width: 100%; /* Ancho máximo del contenedor */
+    max-width: 400px; /* Ancho máximo establecido en 400px */
+    text-align: center; /* Alineación del texto al centro */
+    
+}

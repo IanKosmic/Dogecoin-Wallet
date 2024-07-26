@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inicio de Sesión</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS para estilos -->
+</head>
+
+<body>
+    <div class="login-container">
+                <h2>Dogecoin Wallet</h2>
+        <img src="/Dogecoin.png" alt="Dogecoin.svg">
+        <form id="loginForm"> <!-- Formulario de inicio de sesión -->
+            <div class="form-group">
+                <label for="username">Email:</label>
+                <input type="email" id="username" name="username" required> <!-- Campo de texto para el usuario -->
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required> <!-- Campo de contraseña -->
+            </div>
+            <button type="button" onclick="validateForm()">Log In</button> <!-- Botón para iniciar sesión -->
+            <p id="error-message" style="color: red;"></p> <!-- Contenedor para mensajes de error -->
+        </form>
+    </div>
+    <script src="main.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+
+</html>

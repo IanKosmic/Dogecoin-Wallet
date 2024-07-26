@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="atm-container">
+        <h1 id="atm-h1">Currency in USD</h1>
+        <img src="/Dogecoin.png" alt="Dogecoin.svg">
+        <form id="loginForm"> <!-- Formulario de inicio de sesión -->
+            <div class="form-group">
+                <h2>My wallet balance</h2>
+                <h2 id="balance">$4,694,200.69</h2>
+            </div>
+            <div class="form-group-atm">
+                <button type="button" onclick="balanceWithdraw()">Withdraw</button>
+                <button type="button" onclick="balanceDeposit()">Deposit</button>
+                <button type="button" onclick="balanceTransfer()">Send</button>
+            </div>
+            <button id="lOut" type="button" onclick="logOut()">Cerrar Sesión</button>
+            <p id="error-message" style="color: red;"></p> <!-- Contenedor para mensajes de error -->
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
